@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Central de Indicadores Purina</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="top-bar">
+
+        <div class="left-panel">
+            <button id="prev-btn">◀</button>
+            <select id="report-selector"></select>
+            <button id="next-btn">▶</button>
+        </div>
+
+        <div id="report-name">CARREGANDO...</div>
+
+        <div class="right-panel">
+
+            <div id="status">
+                <span class="status-dot"></span>
+                <span>ONLINE</span>
+            </div>
+
+            <button id="pause-btn">PAUSAR</button>
+
+        </div>
+
+    </header>
+
+    <main class="dashboard-area">
+
+        <iframe
+            id="dashboard-frame"
+            src=""
+            allowfullscreen>
+        </iframe>
+
+        <div id="loading">
+            Atualizando Dashboard...
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
